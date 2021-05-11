@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="40dp"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineSpotShadowColor="#FFFFFF"
+        android:shadowColor="@color/btncolor"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="@color/btncolor"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30sp"
+        android:hint="nombre:"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textColor="@color/btncolor"
+        android:textColorHint="@color/btncolor"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="30sp"
+        android:hint="password:"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColorHint="@color/btncolor"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="50sp"
+        android:backgroundTint="@color/btncolor"
+        android:text="registrate"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="50sp"
+        android:backgroundTint="@color/btncolor"
+        android:text="login"
+        android:textAllCaps="false" />
+
+</LinearLayout>

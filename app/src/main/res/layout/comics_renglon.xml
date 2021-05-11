@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground"
+    android:foregroundTint="#8BC34A"
+    android:foregroundTintMode="add"
+    android:textAlignment="textEnd"
+    card_view:cardCornerRadius="8dp"
+    card_view:contentPadding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
+
+        android:orientation="vertical"
+        android:paddingStart="0sp"
+        android:paddingLeft="0sp"
+        android:paddingTop="0sp"
+        android:paddingEnd="0sp"
+        android:paddingRight="0sp"
+        android:paddingBottom="0sp">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="?android:attr/panelBackground"
+            android:paddingEnd="5dp"
+            android:text="Título"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            card_view:srcCompat="@drawable/superman" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:background="@drawable/rounded">
+
+            <TextView
+                android:id="@+id/page_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número de páginas"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/issue_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precio"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_Cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:contextClickable="false"
+            android:text="Agregar al carrito"
+            android:textColor="#DF916D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/borderbtn" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
